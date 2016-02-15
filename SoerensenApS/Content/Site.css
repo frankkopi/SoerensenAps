@@ -1,0 +1,142 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#skipIntro {
+    color: whitesmoke;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+ }
+
+.fa fa-arrow-circle-o-right {
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+
+#welcomeBody {
+	background-color: #2d1125;
+	font-family: 'Cutive Mono', 'monospace';
+}
+
+/* start position for the dot in the middle of screen */
+#firstDotPast {
+	color: whitesmoke;
+    font-style: italic;
+	top: 40%;
+	left: 50%;
+	position: fixed;
+}
+
+#firstDotFuture {
+	color: whitesmoke;
+    font-style: italic;
+	top: 40%;
+	left: 50%;
+	position: fixed;
+}
+
+
+#thePastText {
+	color: whitesmoke;
+	top: 20%;
+	left: 12%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+#thePastTextFinish {
+	color: whitesmoke;
+	top: 28%;
+	left: 10%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+#theFutureText {
+	color: whitesmoke;
+	top: 45%;
+	left: 12%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+#theFutureTextFinish {
+	color: whitesmoke;
+	top: 53%;
+	left: 10%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+#poulErik {
+	color: whitesmoke;
+	top: 70%;
+	left: 10%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+#leftQuote {
+    font-style: italic;
+	color: whitesmoke;
+	top: 20%;
+	left: 8%;
+	position: absolute;
+	font-size: 400%;
+	height: 400px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: inline;
+}
+
+/*
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cutive Mono'), local('CutiveMono-Regular'), url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQSYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cutive Mono'), local('CutiveMono-Regular'), url(http://fonts.gstatic.com/s/cutivemono/v4/N5odNRruTwjvCM8y77PhQY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*/

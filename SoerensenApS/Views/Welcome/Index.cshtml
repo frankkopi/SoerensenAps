@@ -1,0 +1,100 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href="~/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet">
+</head>
+
+<body id="welcomeBody">
+    <audio id="beep1">
+        <source src="~/Audio/keystrokeC1.mp3">
+        <!--<source src="audio/beep.ogg">-->
+    </audio>
+    <audio id="beep2">
+        <source src="~/Audio/keystrokeC2.mp3">
+    </audio>
+    <audio id="beep3">
+        <source src="~/Audio/keystrokeC3.mp3">
+    </audio>
+    <audio id="beep4">
+        <source src="~/Audio/keystrokeC4.mp3">
+    </audio>
+    <audio id="beep5">
+        <source src="~/Audio/keystrokeC5.mp3">
+    </audio>
+    <audio id="beep6">
+        <source src="~/Audio/keystrokeC6.mp3">
+    </audio>
+    <audio id="beep7">
+        <source src="~/Audio/keystrokeC7.mp3">
+    </audio>
+    <audio id="beep8">
+        <source src="~/Audio/keystrokeC8.mp3">
+    </audio>
+    <audio id="beep9">
+        <source src="~/Audio/keystrokeC9.mp3">
+    </audio>
+    <audio id="beep10">
+        <source src="~/Audio/keystrokeC10.mp3">
+    </audio>
+        
+    <a href="Home/Index" id="skipIntro">
+        Skip Intro&nbsp;<i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i>
+    </a>
+
+    <div id="firstDotPast">.</div>
+    <span id="leftQuote" class="hide">&ldquo;</span>
+    <span id="thePastText"></span>
+    <div id="thePastTextFinish"></div>
+
+    <div id="firstDotFuture" class="hide">.</div>
+    <span id="theFutureText"></span>
+    <div id="theFutureTextFinish"></div>
+
+    <div id="poulErik"></div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/MyScripts/mutationObserver.js"></script>
+    <script src="~/Scripts/MyScripts/typeit.js"></script>
+    <script src="~/Scripts/MyScripts/theFutureAnimation.js"></script>
+    <script src="~/Scripts/MyScripts/thePastAnimation.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            startThePastSentence();
+
+            setTimeout(function () {
+                startTheFutureSentence();
+            }, 12000);
+
+            @*setTimeout(function () {
+                $.ajax({
+                    type: "GET",
+                    url: '@Url.Action("RedirectToHomeController", "Welcome")',
+                    success: (function () {
+                        window.location.href = '/Home/Index'  // redirect to another page
+                    })
+                });
+
+            }, 31000);*@
+        });
+
+        //thePastTextObserver();
+        //thePastTextFinishObserver();
+        //theFutureTextObserver();
+        //theFutureTextFinishObserver();
+    </script>
+
+</body>
+</html>
