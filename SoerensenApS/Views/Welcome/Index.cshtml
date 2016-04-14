@@ -5,6 +5,7 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8">
@@ -16,6 +17,7 @@
 </head>
 
 <body id="welcomeBody">
+    <img src="~/Images/backgroundWeb.jpg" class="bg"/>
     <audio id="beep1">
         <source src="~/Audio/keystrokeC1.mp3">
         <!--<source src="audio/beep.ogg">-->
@@ -48,9 +50,9 @@
         <source src="~/Audio/keystrokeC10.mp3">
     </audio>
         
-    <a href="Home/Index" id="skipIntro">
+    @*<a href="Home/Index" id="skipIntro">
         Skip Intro&nbsp;<i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i>
-    </a>
+    </a>*@
 
     <div id="firstDotPast">.</div>
     <span id="leftQuote" class="hide">&ldquo;</span>
@@ -78,7 +80,7 @@
                 startTheFutureSentence();
             }, 12000);
 
-            @*setTimeout(function () {
+            setTimeout(function () {
                 $.ajax({
                     type: "GET",
                     url: '@Url.Action("RedirectToHomeController", "Welcome")',
@@ -87,7 +89,7 @@
                     })
                 });
 
-            }, 31000);*@
+            }, 31000);
         });
 
         //thePastTextObserver();
